@@ -16,7 +16,7 @@
             <StackPanel>
                 <TextBlock Text="Authorization" FontSize="30"></TextBlock>
                 <TextBox x:Name="loginTxtBox" materialDesign:HintAssist.Hint="Login" Style="{DynamicResource MaterialDesignOutlinedTextFieldTextBox}" FontSize="25"/>
-                <TextBox x:Name="passwordTxtBox" materialDesign:HintAssist.Hint="Password" Style="{DynamicResource MaterialDesignOutlinedTextFieldTextBox}" FontSize="25"/>
+                <PasswordBox x:Name="passwordTxtBox" materialDesign:HintAssist.Hint="Password" Style="{DynamicResource MaterialDesignOutlinedTextFieldTextBox}" FontSize="25"/>
                 <StackPanel Orientation="Horizontal" Margin="0 10">
                     <Button Background="#CD5C5C" Width="100" Height="50" Click="Register" >Register</Button>
                     <Button Background="#CD5C5C" Width="100" Height="50" Click="Authorize">Authorize</Button>
