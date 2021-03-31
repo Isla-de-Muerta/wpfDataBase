@@ -10,27 +10,22 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WpfApp2
 {
-    public partial class MainWindow : Window
+    /// <summary>
+    /// Логика взаимодействия для UsersWindow.xaml
+    /// </summary>
+    public partial class UsersWindow : Window
     {
-        public MainWindow()
+        public UsersWindow()
         {
             InitializeComponent();
-        }
+            var application = new ApplicationContext();
 
-        private void Register(object sender, RoutedEventArgs e)
-        {
-            var registerWindow = new UsersWindow();
-            registerWindow.ShowDialog();
-        }
-
-        private void Authorize(object sender, RoutedEventArgs e)
-        {
-
+            var users = application.users.AsEnumerable().ToList();
+            userListBox.ItemsSource = users;
         }
     }
 }

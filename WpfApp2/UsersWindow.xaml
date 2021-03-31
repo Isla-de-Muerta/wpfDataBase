@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApp2.UsersWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="UsersWindow" Height="450" Width="800">
+    <Grid>
+        <ListBox x:Name="userListBox">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock x:Name="userNameTxtBlock" Text="{Binding Path=name}"/>
+                        <TextBlock x:Name="passwordTxtBlock" Text="{Binding Path=password}"/>
+                        <TextBlock x:Name="emailTxtBlock" Text="{Binding Path=email}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>
