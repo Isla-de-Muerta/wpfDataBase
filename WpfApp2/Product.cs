@@ -10,7 +10,7 @@ namespace WpfApp2
     {
         public int id { get; set; }
         public string title { get; set; }
-        public string ingSource { get; set; }
+        public string imgSource { get; set; }
         public int price { get; set; }
     }
 }

@@ -8,6 +8,7 @@
         Title="MainWindow" Height="450" Width="800"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
     <Grid>
+                <materialDesign:Snackbar x:Name="SnackBarRegister" Height="40" MessageQueue="{materialDesign:MessageQueue}"/>
         <Image Stretch="Fill" Source="http://materialdesigninxaml.net/images/MD4XAML.png"/>
         <Border Background="White" Padding="10" MaxWidth="500" MaxHeight="300" CornerRadius="10">
             <Border.Effect>
